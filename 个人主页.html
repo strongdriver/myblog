@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>个人主页</title>
+		<style type="text/css">
+			.bg {
+				background: url(pic1.win4000.jpeg) no-repeat;
+				background-size: 100% 100%;
+				background-attachment: fixed;
+			}
+			h2{
+				position: fixed;
+				float: left;
+				left: 30%;
+				top: 70%;
+			}
+			h3{
+				position: fixed;
+				float: left;
+				top: 10%;
+			}
+			p {
+				width: 900px;
+				height: 700px;
+				position: fixed;
+				border: 1px solid black;
+				border-top-left-radius: 200px;
+				border-top-right-radius: 200px;
+				float: right;
+				right: 25%;
+				top: 15%;
+				background-color: white;
+				filter: opacity(20%);
+			}
+
+			.touxiang {
+				width: 150px;
+				height: 150px;
+				margin: 50px 50px 50px 0;
+				position: fixed;
+				border-radius: 500px;
+				float: right;
+				right: 70%;
+				top: 12%;
+			}
+
+			#test {
+				width: 650px;
+				height: 150px;
+				position: fixed;
+				float: right;
+				right: 28%;
+				top: 45%;
+			}
+
+			button {
+				position: absolute;
+				right: 63%;
+				bottom: 5%;
+				font-size: 25px;
+			}
+		</style>
+		<script type="text/javascript">
+			var str=new Array("请勿点击屏幕")
+			while(true){
+				for(var i=0;i<3;i++){
+					alert(str)
+				}
+				break;
+			}
+			/*window.onload=function(){
+				let timer=10;
+				steInterval(()=>{
+					timer--;
+					document.getElementById("time").innerText=timer;
+					if(timer==0){
+						location.href="个人主页.html";
+					}
+				},1000)
+			}*/
+		</script>
+	</head>
+		<body class="bg">
+			<audio id="audio" src="img/1.mp3" controls="controls" autoplay="autoplay"></audio>
+			<script>
+				var audio = document.getElementByld("audio");
+				audio.play();
+			</script>
+			<img src="wv_1643691468065.jpg" width="200px" height="700px" style="margin: 0% 90%;""/>
+			<p>
+				<img class="touxiang" src="4.jpg" />
+			<h1 id="test">胆怯并不是什么弱点，正视自己害怕的东西，反而能成为我们前进的动力!</h1>
+			<button onclick="editinput()">咸鱼语录</button>
+			<h2>QQ:3078766334&nbsp;ID><br />四川轻化工大学<br />家里蹲&nbsp;学生<br />山西-晋城</h2>
+			</p>
+			<h3><img src="wv_1643691484187.jpg" width="200px" height="700px" /></h3>
+			<script>
+				function editinput() {
+					document.getElementById("test").innerHTML =
+						'陋室铭（大学生版）分不在高,及格就行;学不在深,抄袭则灵。斯是教室,唯吾闲情。短信发得快,瞌睡打得勤;琢磨打游戏,寻思找美后。无书声之乱开,无研习之劳形;虽非体闲场,堪比大客厅。梦尝云:混张文凭!';
+				}
+			</script>
+
+		</body>
+</html>

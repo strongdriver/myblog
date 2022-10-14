@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>留言板</title>
+		<style type="text/css">
+			ul{
+				list-style-position: inside;
+			}
+			#box1{
+				padding-top:10px;
+				display: flex;
+				align-items:stretch;
+				/* border:3px solid red; */
+			}
+			#box1>div{
+				/* border:3px solid blue; */
+			}
+			#box2{
+				width:70%;
+				margin:auto;
+				padding:10px 0;
+				letter-spacing: 5px;
+				/* border:3px solid red; */
+			}
+			h1{
+				font-size: 32px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			h2{
+				font-size: 32px;
+				font-family: Arial, Helvetica, sans-serif;
+				color: red;
+			}
+			p{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+				<div id="box1">
+					<div style="flex-grow:1">
+						<div><h1>留言板</h1></div>
+					</div>
+				</div>
+		<div id="box2">
+				<h2>
+					    <span>发表留言</span>
+					</h2>
+					<form action="/form/" method="post" >
+					<label>
+					    <span>姓     名  :</span>
+					    <input id="name" type="text" name="name" >
+					    <div class="error-msga"></div>
+					</label>
+					
+					<label>
+					    <span>电子邮件 :</span>
+					    <input id="email" type="email" value="" name="email" placeholder=""/>
+					    <div class="error-msgb"></div>
+					</label>
+					
+					<label><h2>
+						分类:
+						不保密   <input type="radio" value="不保密" name="gender" checked="checked"/>
+						保密     <input type="radio" value="保密" name="gender" />
+						留言类型:
+						<select>
+							<option>私密</option>
+							<option>公开</option>
+							<option>仅好友可见</option>
+							<option selected="selected"></option>
+						</select>
+					</label>
+					</h2>
+					<div id="box2"><label>
+					    <span>留言 :</span>
+					    <input type="text" style="width:70%;height:85px">
+					</label>
+					<div ></div></div>
+						<p>注：如果您的留言不便公开，请选择“保密”选项，提交后可凭系统反馈给您的留言编号，查<br>询密码和您的姓名查询回复。</p>
+				<label>
+				        <span>&nbsp;</span>
+				        <div align="center"><input type="submit" class="button" value="提交"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    <input type="reset" class="button" value="清除"/></div>
+					</label>
+				    <input type='hidden' name='csrfmiddlewaretoken' value='SfHkbL4feo1G00sJQtbO7TtLN4c2BUwa' />
+				</form>
+						<li>请遵守国家有关法律，法规，尊重网上道德，承担一切因您的行为而直接或间接引起<br>的法律责任。</li>
+						<li>本网站拥有管理笔名和留言的一切权利。</li>
+					</ul>
+		</div>
+	</body>
+</html>
